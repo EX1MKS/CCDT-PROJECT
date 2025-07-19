@@ -23,10 +23,13 @@
     --color-white: #fff;
     --spacing: 0.25rem;
     --breakpoint-xl: 80rem;
+    --container-xl: 36rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
@@ -35,6 +38,10 @@
     --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
+    --text-7xl: 4.5rem;
+    --text-7xl--line-height: 1;
+    --text-9xl: 8rem;
+    --text-9xl--line-height: 1;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
@@ -48,6 +55,8 @@
     --color-primary: oklch(72.3% 0.219 149.579);
     --color-dark: #09080d;
     --color-light: #f0f0f0;
+    --color-bglight: #f0f2f1;
+    --color-bgdark: #0a090e;
   }
 }
 @layer base {
@@ -820,20 +829,65 @@
   .right-\[-5px\] {
     right: -5px;
   }
+  .-bottom-12 {
+    bottom: calc(var(--spacing) * -12);
+  }
+  .-bottom-80 {
+    bottom: calc(var(--spacing) * -80);
+  }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+  .left-10 {
+    left: calc(var(--spacing) * 10);
+  }
   .z-50 {
     z-index: 50;
+  }
+  .m-200 {
+    margin: calc(var(--spacing) * 200);
+  }
+  .m-auto {
+    margin: auto;
+  }
+  .mx-5 {
+    margin-inline: calc(var(--spacing) * 5);
+  }
+  .mx-20 {
+    margin-inline: calc(var(--spacing) * 20);
+  }
+  .mx-30 {
+    margin-inline: calc(var(--spacing) * 30);
+  }
+  .mx-50 {
+    margin-inline: calc(var(--spacing) * 50);
+  }
+  .mx-200 {
+    margin-inline: calc(var(--spacing) * 200);
   }
   .mx-auto {
     margin-inline: auto;
   }
+  .my-5 {
+    margin-block: calc(var(--spacing) * 5);
+  }
   .my-6 {
     margin-block: calc(var(--spacing) * 6);
+  }
+  .my-10 {
+    margin-block: calc(var(--spacing) * 10);
+  }
+  .my-20 {
+    margin-block: calc(var(--spacing) * 20);
+  }
+  .my-100 {
+    margin-block: calc(var(--spacing) * 100);
+  }
+  .my-500 {
+    margin-block: calc(var(--spacing) * 500);
   }
   .ms-5 {
     margin-inline-start: calc(var(--spacing) * 5);
@@ -841,11 +895,44 @@
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
   }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
+  }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
+  }
+  .mt-\[2\%\] {
+    margin-top: 2%;
+  }
+  .mt-\[2rem\] {
+    margin-top: 2rem;
+  }
+  .mt-\[4\%\] {
+    margin-top: 4%;
+  }
+  .mt-\[5\%\] {
+    margin-top: 5%;
+  }
+  .mt-\[5rem\] {
+    margin-top: 5rem;
+  }
+  .mt-\[9\%\] {
+    margin-top: 9%;
   }
   .apexcharts-canvas {
     & .apexcharts-tooltip {
@@ -994,6 +1081,15 @@
       filter: none !important;
     }
   }
+  .apexcharts-legend-series {
+    .apexcharts-canvas & {
+      margin-left: 0.5rem !important;
+      margin-right: 0.5rem !important;
+      margin-bottom: 0.25rem !important;
+      display: flex !important;
+      align-items: center !important;
+    }
+  }
   .apexcharts-tooltip {
     .apexcharts-canvas & {
       background-color: white !important;
@@ -1079,6 +1175,12 @@
       color: white;
     }
   }
+  .apexcharts-tooltip-marker {
+    :is([dir=rtl]) .apexcharts-tooltip & {
+      margin-right: 0px !important;
+      margin-left: e !important;
+    }
+  }
   .datatable-dropdown {
     .datatable-wrapper .datatable-top & {
       color: var(--color-gray-500);
@@ -1140,8 +1242,17 @@
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
+  }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
+  }
+  .mb-20 {
+    margin-bottom: calc(var(--spacing) * 20);
+  }
+  .mb-200 {
+    margin-bottom: calc(var(--spacing) * 200);
   }
   .apexcharts-xaxistooltip {
     .apexcharts-canvas & {
@@ -1180,6 +1291,14 @@
       border-bottom-color: var(--color-gray-700) !important;
     }
   }
+  .datatable-pagination-list {
+    .datatable-wrapper .datatable-bottom .datatable-pagination & {
+      display: flex;
+      align-items: center;
+      height: 2rem;
+      font-size: 0.875rem;
+    }
+  }
   .block {
     display: block;
   }
@@ -1198,8 +1317,23 @@
   .h-4 {
     height: calc(var(--spacing) * 4);
   }
+  .h-80 {
+    height: calc(var(--spacing) * 80);
+  }
+  .h-90 {
+    height: calc(var(--spacing) * 90);
+  }
+  .h-120 {
+    height: calc(var(--spacing) * 120);
+  }
   .h-\[2px\] {
     height: 2px;
+  }
+  .h-\[36rem\] {
+    height: 36rem;
+  }
+  .h-auto {
+    height: auto;
   }
   .h-full {
     height: 100%;
@@ -1293,17 +1427,44 @@
   .w-0 {
     width: calc(var(--spacing) * 0);
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
+  .w-1\/2 {
+    width: calc(1/2 * 100%);
+  }
+  .w-1\/3 {
+    width: calc(1/3 * 100%);
+  }
   .w-4 {
     width: calc(var(--spacing) * 4);
   }
+  .w-\[5\%\] {
+    width: 5%;
+  }
+  .w-\[15\%\] {
+    width: 15%;
+  }
+  .w-\[20\%\] {
+    width: 20%;
+  }
+  .w-\[30\%\] {
+    width: 30%;
+  }
   .w-\[40\%\] {
     width: 40%;
+  }
+  .w-\[60\%\] {
+    width: 60%;
   }
   .w-\[94\%\] {
     width: 94%;
   }
   .w-full {
     width: 100%;
+  }
+  .w-xl {
+    width: var(--container-xl);
   }
   .max-w-screen-xl {
     max-width: var(--breakpoint-xl);
@@ -1389,11 +1550,26 @@
   .resize {
     resize: both;
   }
+  .snap-x {
+    scroll-snap-type: x var(--tw-scroll-snap-strictness);
+  }
+  .snap-y {
+    scroll-snap-type: y var(--tw-scroll-snap-strictness);
+  }
+  .snap-mandatory {
+    --tw-scroll-snap-strictness: mandatory;
+  }
+  .snap-start {
+    scroll-snap-align: start;
+  }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
+  }
+  .flex-row-reverse {
+    flex-direction: row-reverse;
   }
   .flex-wrap {
     flex-wrap: wrap;
@@ -1401,8 +1577,14 @@
   .items-center {
     align-items: center;
   }
+  .justify-around {
+    justify-content: space-around;
+  }
   .justify-between {
     justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
   }
   .gap-0 {
     gap: calc(var(--spacing) * 0);
@@ -1419,6 +1601,20 @@
   }
   .self-center {
     align-self: center;
+  }
+  .datatable-container {
+    .datatable-wrapper & thead tr.search-filtering-row th {
+      padding-top: 0;
+    }
+    .datatable-wrapper & {
+      overflow-x: auto;
+    }
+  }
+  .overflow-x-hidden {
+    overflow-x: hidden;
+  }
+  .overflow-y-scroll {
+    overflow-y: scroll;
   }
   .scroll-smooth {
     scroll-behavior: smooth;
@@ -1608,6 +1804,9 @@
       background-color: var(--color-gray-700);
     }
   }
+  .bg-bglight {
+    background-color: var(--color-bglight);
+  }
   .bg-black {
     background-color: var(--color-black);
   }
@@ -1617,8 +1816,29 @@
       background-color: color-mix(in oklab, var(--color-black) 10%, transparent);
     }
   }
+  .bg-black\/60 {
+    background-color: color-mix(in srgb, #000 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 60%, transparent);
+    }
+  }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
+  }
+  .bg-gray-100\/20 {
+    background-color: color-mix(in srgb, oklch(96.7% 0.003 264.542) 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-gray-100) 20%, transparent);
+    }
+  }
+  .bg-gray-100\/40 {
+    background-color: color-mix(in srgb, oklch(96.7% 0.003 264.542) 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-gray-100) 40%, transparent);
+    }
+  }
+  .bg-gray-700 {
+    background-color: var(--color-gray-700);
   }
   .bg-light {
     background-color: var(--color-light);
@@ -1632,16 +1852,40 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-white\/20 {
+    background-color: color-mix(in srgb, #fff 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 20%, transparent);
+    }
+  }
+  .bg-white\/40 {
+    background-color: color-mix(in srgb, #fff 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 40%, transparent);
+    }
+  }
+  .bg-white\/60 {
+    background-color: color-mix(in srgb, #fff 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 60%, transparent);
+    }
+  }
   .dark {
     & .selectedCell {
       background-color: var(--color-gray-700);
     }
   }
-  .bg-\[url\(\'\/src\/asset\/img\/hero-light\.jpg\'\)\] {
-    background-image: url('/src/asset/img/hero-light.jpg');
+  .bg-\[url\(\'\/src\/asset\/img\/hero-section\/hero-light\.jpg\'\)\] {
+    background-image: url('/src/asset/img/hero-section/hero-light.jpg');
+  }
+  .bg-\[url\(\'\/src\/asset\/img\/mis\/mis_light\.png\'\)\] {
+    background-image: url('/src/asset/img/mis/mis_light.png');
   }
   .bg-cover {
     background-size: cover;
+  }
+  .bg-bottom {
+    background-position: bottom;
   }
   .bg-center {
     background-position: center;
@@ -1687,6 +1931,9 @@
       fill: white !important;
     }
   }
+  .fill-\[\#1b2330\] {
+    fill: #1b2330;
+  }
   .apexcharts-gridline {
     stroke: var(--color-gray-200) !important;
     .dark & {
@@ -1705,6 +1952,19 @@
       stroke: var(--color-gray-700) !important;
     }
   }
+  .object-cover {
+    object-fit: cover;
+  }
+  .apexcharts-legend {
+    .apexcharts-canvas & {
+      padding: 0 !important;
+    }
+  }
+  .apexcharts-tooltip-y-group {
+    .apexcharts-canvas .apexcharts-tooltip-series-group.apexcharts-active & {
+      padding: 0 !important;
+    }
+  }
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
@@ -1720,6 +1980,12 @@
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
+  .px-200 {
+    padding-inline: calc(var(--spacing) * 200);
+  }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
@@ -1731,6 +1997,11 @@
   }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
+  }
+  .search-filtering-row {
+    .datatable-wrapper .datatable-container thead tr& th {
+      padding-top: 0;
+    }
   }
   .apexcharts-legend-text {
     .apexcharts-canvas & {
@@ -1755,6 +2026,14 @@
   .pb-1 {
     padding-bottom: calc(var(--spacing) * 1);
   }
+  .datatable-empty {
+    .datatable-wrapper .datatable-table & {
+      text-align: center;
+    }
+  }
+  .text-center {
+    text-align: center;
+  }
   .text-left {
     text-align: left;
   }
@@ -1774,6 +2053,14 @@
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
+  .text-7xl {
+    font-size: var(--text-7xl);
+    line-height: var(--tw-leading, var(--text-7xl--line-height));
+  }
+  .text-9xl {
+    font-size: var(--text-9xl);
+    line-height: var(--tw-leading, var(--text-9xl--line-height));
+  }
   .text-lg {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
@@ -1781,6 +2068,32 @@
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .apexcharts-datalabels {
+    .apexcharts-canvas & .apexcharts-text.apexcharts-pie-label {
+      font-size: 0.75rem,[object Object] !important;
+      font-weight: 600 !important;
+      text-shadow: none !important;
+      filter: none !important;
+    }
+  }
+  .apexcharts-pie-label {
+    .apexcharts-canvas .apexcharts-datalabels .apexcharts-text& {
+      font-size: 0.75rem,[object Object] !important;
+      font-weight: 600 !important;
+      text-shadow: none !important;
+      filter: none !important;
+    }
+  }
+  .apexcharts-xaxistooltip-text {
+    .apexcharts-canvas & {
+      font-weight: 400 !important;
+      font-size: 0.875rem !important;
+    }
   }
   .apexcharts-tooltip-text-y-label {
     .apexcharts-canvas .apexcharts-tooltip & {
@@ -1867,8 +2180,14 @@
       color: white;
     }
   }
+  .text-bglight {
+    color: var(--color-bglight);
+  }
   .text-black {
     color: var(--color-black);
+  }
+  .text-dark {
+    color: var(--color-dark);
   }
   .text-gray-500 {
     color: var(--color-gray-500);
@@ -1915,6 +2234,9 @@
   .outline-gray-200 {
     outline-color: var(--color-gray-200);
   }
+  .filter {
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
   .transition-all {
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -1928,6 +2250,29 @@
   .duration-300 {
     --tw-duration: 300ms;
     transition-duration: 300ms;
+  }
+  .text-shadow-lg\/60 {
+    --tw-text-shadow-alpha: 60%;
+    text-shadow: 0px 1px 2px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 60%)), 0px 3px 2px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 60%)), 0px 4px 8px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 60%));
+  }
+  .text-shadow-lg\/100 {
+    --tw-text-shadow-alpha: 100%;
+    text-shadow: 0px 1px 2px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 100%)), 0px 3px 2px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 100%)), 0px 4px 8px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 100%));
+  }
+  .text-shadow-\[\#1b2330\] {
+    --tw-text-shadow-color: #1b2330;
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-text-shadow-color: color-mix(in oklab, #1b2330 var(--tw-text-shadow-alpha), transparent);
+    }
+  }
+  .text-shadow-lg {
+    text-shadow: 0px 1px 2px var(--tw-text-shadow-color, rgb(0 0 0 / 0.1)), 0px 3px 2px var(--tw-text-shadow-color, rgb(0 0 0 / 0.1)), 0px 4px 8px var(--tw-text-shadow-color, rgb(0 0 0 / 0.1));
+  }
+  .text-shadow-white {
+    --tw-text-shadow-color: #fff;
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-text-shadow-color: color-mix(in oklab, var(--color-white) var(--tw-text-shadow-alpha), transparent);
+    }
   }
   .group-hover\:w-full {
     &:is(:where(.group):hover *) {
@@ -2007,6 +2352,16 @@
       margin-top: calc(var(--spacing) * 0);
     }
   }
+  .md\:mt-10 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 10);
+    }
+  }
+  .md\:mt-100 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 100);
+    }
+  }
   .md\:mb-0 {
     @media (width >= 48rem) {
       margin-bottom: calc(var(--spacing) * 0);
@@ -2062,6 +2417,11 @@
       margin-block: calc(var(--spacing) * 8);
     }
   }
+  .lg\:mt-12 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 12);
+    }
+  }
   .lg\:w-fit {
     @media (width >= 64rem) {
       width: fit-content;
@@ -2089,9 +2449,22 @@
       border-color: var(--color-gray-700);
     }
   }
+  .dark\:bg-bgdark {
+    &:where(.dark, .dark *) {
+      background-color: var(--color-bgdark);
+    }
+  }
   .dark\:bg-black {
     &:where(.dark, .dark *) {
       background-color: var(--color-black);
+    }
+  }
+  .dark\:bg-black\/60 {
+    &:where(.dark, .dark *) {
+      background-color: color-mix(in srgb, #000 60%, transparent);
+      @supports (color: color-mix(in lab, red, red)) {
+        background-color: color-mix(in oklab, var(--color-black) 60%, transparent);
+      }
     }
   }
   .dark\:bg-dark {
@@ -2099,9 +2472,12 @@
       background-color: var(--color-dark);
     }
   }
-  .dark\:bg-gray-800 {
+  .dark\:bg-dark\/20 {
     &:where(.dark, .dark *) {
-      background-color: var(--color-gray-800);
+      background-color: color-mix(in srgb, #09080d 20%, transparent);
+      @supports (color: color-mix(in lab, red, red)) {
+        background-color: color-mix(in oklab, var(--color-dark) 20%, transparent);
+      }
     }
   }
   .dark\:bg-white\/10 {
@@ -2112,9 +2488,32 @@
       }
     }
   }
-  .dark\:bg-\[url\(\'\/src\/asset\/img\/hero-dark\.jpg\'\)\] {
+  .dark\:bg-white\/60 {
     &:where(.dark, .dark *) {
-      background-image: url('/src/asset/img/hero-dark.jpg');
+      background-color: color-mix(in srgb, #fff 60%, transparent);
+      @supports (color: color-mix(in lab, red, red)) {
+        background-color: color-mix(in oklab, var(--color-white) 60%, transparent);
+      }
+    }
+  }
+  .dark\:bg-\[url\(\'\/src\/asset\/img\/hero-section\/hero-dark\.jpg\'\)\] {
+    &:where(.dark, .dark *) {
+      background-image: url('/src/asset/img/hero-section/hero-dark.jpg');
+    }
+  }
+  .dark\:bg-\[url\(\'\/src\/asset\/img\/mis\/mis_dark\.png\'\)\] {
+    &:where(.dark, .dark *) {
+      background-image: url('/src/asset/img/mis/mis_dark.png');
+    }
+  }
+  .dark\:fill-\[\#7a5ec2\] {
+    &:where(.dark, .dark *) {
+      fill: #7a5ec2;
+    }
+  }
+  .dark\:text-bgdark {
+    &:where(.dark, .dark *) {
+      color: var(--color-bgdark);
     }
   }
   .dark\:text-black {
@@ -2143,6 +2542,34 @@
   .dark\:outline-gray-700 {
     &:where(.dark, .dark *) {
       outline-color: var(--color-gray-700);
+    }
+  }
+  .dark\:text-shadow-lg\/40 {
+    &:where(.dark, .dark *) {
+      --tw-text-shadow-alpha: 40%;
+      text-shadow: 0px 1px 2px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 40%)), 0px 3px 2px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 40%)), 0px 4px 8px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 40%));
+    }
+  }
+  .dark\:text-shadow-lg\/60 {
+    &:where(.dark, .dark *) {
+      --tw-text-shadow-alpha: 60%;
+      text-shadow: 0px 1px 2px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 60%)), 0px 3px 2px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 60%)), 0px 4px 8px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 60%));
+    }
+  }
+  .dark\:text-shadow-\[\#7a5ec2\] {
+    &:where(.dark, .dark *) {
+      --tw-text-shadow-color: #7a5ec2;
+      @supports (color: color-mix(in lab, red, red)) {
+        --tw-text-shadow-color: color-mix(in oklab, #7a5ec2 var(--tw-text-shadow-alpha), transparent);
+      }
+    }
+  }
+  .dark\:text-shadow-white {
+    &:where(.dark, .dark *) {
+      --tw-text-shadow-color: #fff;
+      @supports (color: color-mix(in lab, red, red)) {
+        --tw-text-shadow-color: color-mix(in oklab, var(--color-white) var(--tw-text-shadow-alpha), transparent);
+      }
     }
   }
   .dark\:hover\:text-primary {
@@ -2182,6 +2609,18 @@ body::-webkit-scrollbar-thumb {
 }
 .dark body::-webkit-scrollbar-thumb {
   background-color: #64748b;
+}
+.swiper-button-next, .swiper-button-prev {
+  color: black !important;
+}
+.swiper-pagination-bullet-active {
+  background: black !important;
+}
+.dark .swiper-button-next, .dark .swiper-button-prev {
+  color: white !important;
+}
+.dark .swiper-pagination-bullet-active {
+  background: white !important;
 }
 @layer base {
   .tooltip-arrow,.tooltip-arrow:before {
@@ -2598,6 +3037,11 @@ body::-webkit-scrollbar-thumb {
   syntax: "*";
   inherits: false;
 }
+@property --tw-scroll-snap-strictness {
+  syntax: "*";
+  inherits: false;
+  initial-value: proximity;
+}
 @property --tw-space-x-reverse {
   syntax: "*";
   inherits: false;
@@ -2682,9 +3126,71 @@ body::-webkit-scrollbar-thumb {
   inherits: false;
   initial-value: solid;
 }
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-drop-shadow-size {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
+}
+@property --tw-text-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-text-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
@@ -2694,6 +3200,7 @@ body::-webkit-scrollbar-thumb {
       --tw-rotate-z: initial;
       --tw-skew-x: initial;
       --tw-skew-y: initial;
+      --tw-scroll-snap-strictness: proximity;
       --tw-space-x-reverse: 0;
       --tw-border-style: solid;
       --tw-font-weight: initial;
@@ -2712,7 +3219,22 @@ body::-webkit-scrollbar-thumb {
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
       --tw-outline-style: solid;
+      --tw-blur: initial;
+      --tw-brightness: initial;
+      --tw-contrast: initial;
+      --tw-grayscale: initial;
+      --tw-hue-rotate: initial;
+      --tw-invert: initial;
+      --tw-opacity: initial;
+      --tw-saturate: initial;
+      --tw-sepia: initial;
+      --tw-drop-shadow: initial;
+      --tw-drop-shadow-color: initial;
+      --tw-drop-shadow-alpha: 100%;
+      --tw-drop-shadow-size: initial;
       --tw-duration: initial;
+      --tw-text-shadow-color: initial;
+      --tw-text-shadow-alpha: 100%;
     }
   }
 }

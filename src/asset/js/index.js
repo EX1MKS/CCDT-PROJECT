@@ -14,10 +14,10 @@ toggle.addEventListener('click', () => {
 let navbar = document.querySelector('nav');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 0) {
-        navbar.classList.add('bg-white', 'dark:bg-dark','outline-1', 'outline-gray-200', 'dark:outline-gray-700');
+        navbar.classList.add('bg-white/20', 'dark:bg-dark/20','outline-1', 'outline-gray-200', 'dark:outline-gray-700');
         navbar.classList.remove('bg-transparent');
     } else {
-        navbar.classList.remove('bg-white', 'dark:bg-dark','outline-1', 'outline-gray-200', 'dark:outline-gray-700');
+        navbar.classList.remove('bg-white/20', 'dark:bg-dark/20','outline-1', 'outline-gray-200', 'dark:outline-gray-700');
         navbar.classList.add('bg-transparent');
     }
 });
@@ -29,3 +29,34 @@ const typed = new Typed("#create", {
   backSpeed: 100, 
   loop: true, 
 });
+
+//animasi swiper
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    speed: 600,
+    spaceBetween: 0,
+    effect: "coverflow",
+    centeredSlides: true,
+      slidesPerView: "2",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  });
+
+
