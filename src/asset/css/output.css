@@ -7,7 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-600: oklch(57.7% 0.245 27.325);
+    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-gray-50: oklch(98.5% 0.002 247.839);
@@ -48,6 +48,8 @@
     --radius-sm: 0.25rem;
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -512,6 +514,9 @@
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
   }
+  .mr-30 {
+    margin-right: calc(var(--spacing) * 30);
+  }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
@@ -666,6 +671,9 @@
   }
   .justify-evenly {
     justify-content: space-evenly;
+  }
+  .justify-start {
+    justify-content: flex-start;
   }
   .gap-0 {
     gap: calc(var(--spacing) * 0);
@@ -886,6 +894,9 @@
       background-color: var(--color-gray-700);
     }
   }
+  .bg-\[url\(\'\/src\/asset\/img\/about\/abb\.png\'\)\] {
+    background-image: url('/src/asset/img/about/abb.png');
+  }
   .bg-\[url\(\'\/src\/asset\/img\/hero-section\/hero-light\.jpg\'\)\] {
     background-image: url('/src/asset/img/hero-section/hero-light.jpg');
   }
@@ -1006,6 +1017,9 @@
   .text-gray-900 {
     color: var(--color-gray-900);
   }
+  .text-red-500 {
+    color: var(--color-red-500);
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -1048,6 +1062,10 @@
   .duration-300 {
     --tw-duration: 300ms;
     transition-duration: 300ms;
+  }
+  .text-shadow-lg\/20 {
+    --tw-text-shadow-alpha: 20%;
+    text-shadow: 0px 1px 2px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 20%)), 0px 3px 2px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 20%)), 0px 4px 8px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 20%));
   }
   .text-shadow-lg\/60 {
     --tw-text-shadow-alpha: 60%;
@@ -1313,6 +1331,14 @@
     &:where(.dark, .dark *) {
       --tw-text-shadow-alpha: 60%;
       text-shadow: 0px 1px 2px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 60%)), 0px 3px 2px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 60%)), 0px 4px 8px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 60%));
+    }
+  }
+  .dark\:text-shadow-dark {
+    &:where(.dark, .dark *) {
+      --tw-text-shadow-color: #09080d;
+      @supports (color: color-mix(in lab, red, red)) {
+        --tw-text-shadow-color: color-mix(in oklab, var(--color-dark) var(--tw-text-shadow-alpha), transparent);
+      }
     }
   }
   .dark\:text-shadow-white {
