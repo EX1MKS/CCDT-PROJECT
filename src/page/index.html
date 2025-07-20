@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../asset/css/output.css">
-
-    <title>PROJECT</title>
+    
+    <title>HAZEN</title>
      <!-- Import Google Font CDN --> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,9 +18,9 @@
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
 </head>
-<body class="snap-y snap-mandatory h-screen overflow-y-scroll bg-light text-gray-900 dark:bg-dark dark:text-white overflow-x-hidden">
+
+<body class="bg-light text-gray-900 dark:bg-dark dark:text-white overflow-x-hidden">
     <!-- navbar section begin -->
 <nav class="z-50 top-0 fixed w-full bg-transparent transition-colors duration-300">
   <div class="flex flex-wrap items-center justify-between mx-auto p-4">
@@ -64,7 +64,7 @@
     <!-- navbar section end -->
 
 <!-- hero section begin-->
-<div id="hero" class="snap-start hero-section w-full h-screen bg-no-repeat bg-cover bg-center bg-[url('/src/asset/img/hero-section/hero-light.jpg')] dark:bg-[url('/src/asset/img/hero-section/hero-dark.jpg')]">
+<div id="hero" class="hero-section w-full h-screen bg-no-repeat bg-cover bg-center bg-[url('/src/asset/img/hero-section/hero-light.jpg')] dark:bg-[url('/src/asset/img/hero-section/hero-dark.jpg')]">
     <div class="w-[94%] mx-auto h-full flex items-center justify-between py-10">
         <div class="lg:w-fit">
             <div class="text-5xl text-left text-black dark:text-white font-extrabold uppercase">
@@ -91,7 +91,7 @@
 <!-- hero section end-->
 
 <!-- about section begin-->
-<div aos-init a id="about-us" class="snap-start w-full h-screen flex flex-row-reverse justify-around items-center bg-bglight dark:bg-bgdark">
+<div id="about-us" class="w-full h-screen flex flex-row-reverse justify-around items-center bg-bglight dark:bg-bgdark">
     <div class="flex flex-col justify-center w-1/3 ">
         <div class="flex flex-col items-center">
             <h1 data-aos="fade-left"  data-aos-duration="1000" class= "mb-5 text-5xl text-left text-black dark:text-white font-extrabold uppercase">ABOUT HAZEN</h1>
@@ -99,8 +99,8 @@
         </div>
         
         <div class="flex justify-center mt-2">
-            <a href="../page/about.html" data-aos="fade-left"  data-aos-duration="400" class=" w-[60%] flex items-center justify-between  py-1 px-4 uppercase bg-primary rounded-sm">
-                <h3 class="dark:text-black text-white text-lg font-semibold ">VIEW MORE</h3>
+            <a href="../page/about.html" data-aos="fade-left"  data-aos-duration="400" class=" w-[50%] flex items-center justify-between  py-1 px-4 uppercase bg-primary rounded-sm">
+                <h3 class="dark:text-black text-white text-lg font-semibold ">SEE MORE</h3>
                 <div class="w-[40%] flex items-center dark:text-black text-white text-4xl gap-0">
                     <hr class="w-full border dark:border-black border-white relative -right-3"/>
                     <ion-icon name="chevron-forward"></ion-icon>
@@ -123,8 +123,7 @@
 <!-- about section end-->
 
 <!-- games section begin -->
- <span class="" id="games"></span>
- <div class="games snap-start h-screen">
+ <div id="games" class="games pt-2 h-screen">
     <h1 data-aos="fade-up"  data-aos-duration="1000" class= "mt-20 mb-5 text-5xl text-center text-black dark:text-white font-extrabold uppercase"
     > OUR GAMES</h1>
     <!-- games slider begin -->
@@ -134,7 +133,7 @@
     <div class="swiper-wrapper">
      <!-- Slide 1 -->
 <div class="swiper-slide relative">
-  <img src="/src/asset/img/games/garen-mecha-kingdoms-uhdpaper.com-hd-5.1437.jpg" class="object-cover w-full h-full" alt="">
+  <img src="/src/asset/img/games/garen-mecha-kingdoms-uhdpaper.com-hd-5.1437.jpg" class="object-cover w-full h-full" alt="Exo Clash Game Image">
   <div class="absolute bottom-0 left-0 w-full text-black bg-white/40 dark:bg-black/60 dark:text-white p-4">
     <h3 class="text-xl font-bold">Exo Clash</h3>
     <p class="text-sm">Sci-fi Mecha Action</p>
@@ -142,7 +141,7 @@
 </div>
 <!-- Slide 2 -->
 <div class="swiper-slide relative">
-  <img src="/src/asset/img/games/helldiver.png" class="object-cover w-full h-full" alt="">
+  <img src="/src/asset/img/games/helldiver.png" class="object-cover w-full h-full" alt="Human Vanguard Game Image">
   <div class="absolute bottom-0 left-0 w-full text-black bg-white/40 dark:bg-black/60 dark:text-white p-4">
     <h3 class="text-xl font-bold">Human Vanguard</h3>
     <span class="text-sm">Co-op Tactical Shooter</span>
@@ -150,15 +149,15 @@
 </div>
 <!-- Slide 3 -->
 <div class="swiper-slide relative">
-  <img src="/src/asset/img/games/quality_restoration_20250718232659194.jpg" class="object-cover w-full h-full" alt="">
+  <img src="/src/asset/img/games/quality_restoration_20250718232659194.jpg" class="object-cover w-full h-full" alt="Aeterna Chronicles Game Image">
   <div class="absolute bottom-0 left-0 w-full text-black bg-white/40 dark:bg-black/60 dark:text-white p-4">
     <h3 class="text-xl font-bold">Aeterna Chronicles</h3>
-    <span class="text-sm">Fantasy JRPG</span>
+    <span class="text-sm">Action Adventure</span>
   </div>
 </div>
       <!-- Slide 4 -->
       <div class="swiper-slide">
-        <img src="/src/asset/img/games/wp2753232-marine-hd-wallpaper.jpg" class="object-cover w-full h-full" alt="">
+        <img src="/src/asset/img/games/wp2753232-marine-hd-wallpaper.jpg" class="object-cover w-full h-full" alt="Iron Legion Game Image">
          <div class="absolute bottom-0 left-0 w-full text-black bg-white/40 dark:bg-black/60 dark:text-white p-4">
     <h3 class="text-xl font-bold">Iron Legion</h3>
     <span class="text-sm">Sci-Fi Shooter Action Gore</span>
@@ -166,18 +165,18 @@
     </div>
       <!-- Slide 5 -->
       <div class="swiper-slide">
-        <img src="/src/asset/img/games/yone-lol-splash-art-uhdpaper.com-hd-7.2287.jpg" class="object-cover w-full h-full" alt="">
+        <img src="/src/asset/img/games/yone-lol-splash-art-uhdpaper.com-hd-7.2287.jpg" class="object-cover w-full h-full" alt="Bladae & Souls Game Image">
      <div class="absolute bottom-0 left-0 w-full text-black bg-white/40 dark:bg-black/60 dark:text-white p-4">
-    <h3 class="text-xl font-bold">Blade & Spirit</h3>
+    <h3 class="text-xl font-bold">Blade & Souls</h3>
     <span class="text-sm">Action Hack-n-Slash</span>
   </div>  
     </div>
       <!-- Slide 6 -->
       <div class="swiper-slide">
-        <img src="/src/asset/img/games/wp1862523-arthas-wallpapers.jpg" class="object-cover w-full h-full" alt="">
+        <img src="/src/asset/img/games/wp1862523-arthas-wallpapers.jpg" class="object-cover w-full h-full" alt="Void Templar Game Image">
      <div class="absolute bottom-0 left-0 w-full text-black bg-white/40 dark:bg-black/60 dark:text-white p-4">
     <h3 class="text-xl font-bold">Void Templar</h3>
-    <span class="text-sm">Dark Fantasy Soulslike</span>
+    <span class="text-sm">Dark Fantasy Action</span>
   </div>  
     </div>
     </div>
@@ -192,8 +191,8 @@
 </div>
 <!-- games slider end -->
 <div class="flex justify-center mt-5">
-            <a href="../page/games.html" data-aos="fade-up"  data-aos-duration="600" class=" w-[20%] flex items-center justify-between  py-1 px-4 uppercase bg-primary rounded-sm">
-                <h3 class="dark:text-black text-white text-lg font-semibold ">VIEW MORE</h3>
+            <a href="../page/games.html" data-aos="fade-up"  data-aos-duration="600" class=" w-[18%] flex items-center justify-between  py-1 px-4 uppercase bg-primary rounded-sm">
+                <h3 class="dark:text-black text-white text-lg font-semibold ">SEE MORE</h3>
                 <div class="w-[40%] flex items-center dark:text-black text-white text-4xl gap-0">
                     <hr class="w-full border dark:border-black border-white relative -right-3"/>
                     <ion-icon name="chevron-forward"></ion-icon>
@@ -204,15 +203,18 @@
 <!-- games section end -->
  
 <!-- Mission section start -->
- <div id="mission" class="snap-start w-full h-[36rem] bg-no-repeat bg-cover bg-bottom bg-bglight bg-[url('/src/asset/img/mis/mis_light.png')] dark:bg-[url('/src/asset/img/mis/mis_dark.png')] dark:bg-bgdark" >
-    <div data-aos="zoom-in-up"  data-aos-duration="1000" class="h-[36rem]  m-auto flex flex-col justify-center items-center ">
-        <h1 class=" text-7xl text-black dark:text-white font-extrabold uppercase text-shadow-lg/60 text-shadow-white dark:text-shadow-white">Our Mission</h1>
-        <p class="text-3xl text-center mt-3 text-shadow-lg/100 text-shadow-white dark:text-shadow-lg/40">To create thrilling experiences for players around the world</p>
- </div>
-<!-- Mission section end -->
+ <div id="mission" class="py-7 bg-white dark:bg-[#040408]">
+     <div class="mt-10 w-full h-[36rem] bg-no-repeat bg-cover bg-bottom bg-bglight bg-[url('/src/asset/img/mis/mis_light.png')] dark:bg-[url('/src/asset/img/mis/mis_dark.png')] dark:bg-bgdark" >
+         <div data-aos="zoom-in-up"  data-aos-duration="1000" class="h-[36rem]  m-auto flex flex-col justify-center items-center ">
+             <h1 class=" text-7xl text-black dark:text-white font-extrabold uppercase text-shadow-lg/60 text-shadow-white dark:text-shadow-white">Our Mission</h1>
+             <p class="text-3xl text-center mt-3 text-shadow-lg/100 text-shadow-white dark:text-shadow-lg/40">To create thrilling experiences for players around the world</p>
+            </div>
+        </div>
+    </div>
+        <!-- Mission section end -->
 
 <!-- footer begin -->
-<footer class="bg-white dark:bg-dark">
+<footer id="footer" class="bg-white dark:bg-dark">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
