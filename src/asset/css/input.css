@@ -47,11 +47,17 @@ body::-webkit-scrollbar-thumb {
 .swiper-pagination-bullet-active {
   background: black !important;
 }
+.swiper-pagination-bullet-active {
+  background: black !important;
+}
 
 /* dark mode */
 .dark .swiper-button-next,
 .dark .swiper-button-prev {
   color: white !important;
+}
+.dark .swiper-pagination-bullet{
+  background: white !important;
 }
 .dark .swiper-pagination-bullet-active {
   background: white !important;

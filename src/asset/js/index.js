@@ -31,7 +31,7 @@ const typed = new Typed("#create", {
 });
 
 //animasi swiper games
-  const swiper = new Swiper(".mySwiper", {
+ const gamesSwiper = new Swiper("#games .mySwiper", {
     loop: true,
     speed: 600,
     spaceBetween: 0,
