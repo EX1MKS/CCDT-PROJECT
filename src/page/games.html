@@ -30,32 +30,56 @@
         class="text-black flex items-center space-x-3 rtl:space-x-reverse">
         <span class="self-center text-2xl font-bold whitespace-nowrap dark:text-white">HAZEN</span>
       </a>
-      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul
-          class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-5 md:mt-0 md:border-0  dark:border-gray-700">
 
+        <div class="md:absolute md:right-2 md:top-4">
+       <!-- dark mode button -->
+            <button type="button" id="dark-toggle"
+              class="md:text-3xl text-2xl cursor-pointer rotate-y-180">
+              <ion-icon class="text-black dark:text-white" name="moon"></ion-icon>
+            </button>
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden hover:bg-black focus:outline-none focus:ring-[1px] focus:ring-black dark:text-white dark:hover:bg-white dark:focus:ring-white" aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button> 
+      </div>
+       
+      <div class="hidden w-full md:block md:mr-8 md:w-auto" id="navbar-default">
+        <ul
+          class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-black rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:border-white">
           <li data-aos="fade-left" data-aos-duration="1000" class="relative group">
-            <a href="/src/page/index.html"
+            <a href="index.html"
               class="block py-2 px-3 md:p-0 text-black dark:text-white transition-colors duration-300 hover:text-primary dark:hover:text-primary">Home</a>
             <span
               class="absolute bottom-0 left-0 h-[2px] w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
           </li>
-          <li data-aos="fade-left" data-aos-duration="1000" class="relative group">
-            <a href="/src/page/about.html"
-              class="block py-2 md:p-0 text-black dark:text-white transition-colors duration-300 hover:text-primary dark:hover:text-primary">About Us</a>
+
+          <li data-aos="fade-left" data-aos-duration="800" class="relative group">
+            <a href="about.html"
+              class="block py-2 px-3 md:p-0 text-black dark:text-white transition-colors duration-300 hover:text-primary dark:hover:text-primary">About
+              Us</a>
             <span
               class="absolute bottom-0 left-0 h-[2px] w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
           </li>
 
-          <li data-aos="fade-left" data-aos-duration="800"
-            class="ml-4">
-            <!-- dark mode button -->
-            <button type="button" id="dark-toggle"
-              class="absolute text-black dark:text-white top-[-4px] right-[-5px] text-3xl cursor-pointer rotate-y-180 ">
-              <ion-icon name="moon"></ion-icon> </button>
+          <li data-aos="fade-left" data-aos-duration="600" class="relative group">
+            <a href="games.html"
+              class="block py-2 px-3 md:p-0 text-black dark:text-white transition-colors duration-300 hover:text-primary dark:hover:text-primary">Games</a>
+            <span
+              class="absolute bottom-0 left-0 h-[2px] w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
+          </li>
+
+          <li data-aos="fade-left" data-aos-duration="400" class="relative group">
+            <a href="index.html#mission"
+              class="block py-2 px-3 md:p-0 text-black dark:text-white transition-colors duration-300 hover:text-primary dark:hover:text-primary">Our
+              Mission</a>
+            <span
+              class="absolute bottom-0 left-0 h-[2px] w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
           </li>
         </ul>
       </div>
+
     </div>
   </nav>
   <!-- navbar section end -->
@@ -151,16 +175,16 @@
 
   <!-- footer begin -->
   <footer class="bg-white dark:bg-dark">
-    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+    <div class="mx-auto w-full p-4 py-6 lg:py-8">
       <div class="md:flex md:justify-between">
         <div>
-          <div class="mb-6 md:mb-0">
+          <div>
             <a href="#" class="flex items-center">
               <span class="self-center text-2xl font-bold whitespace-nowrap mb-5 dark:text-white">HAZEN</span>
             </a>
           </div>
 
-          <div class="flex mt-4 sm:justify-center sm:mt-0">
+          <div class="flex mb-7 md:mb-0 sm:justify-center sm:mt-0">
             <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
               <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                 viewBox="0 0 8 19">
