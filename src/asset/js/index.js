@@ -30,33 +30,42 @@ const typed = new Typed("#create", {
   loop: true, 
 });
 
-//animasi swiper games
- const gamesSwiper = new Swiper("#games .mySwiper", {
-    loop: true,
-    speed: 600,
-    spaceBetween: 0,
-    effect: "coverflow",
-    centeredSlides: true,
-      slidesPerView: "2",
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+// animasi swiper games
+const gamesSwiper = new Swiper("#games .mySwiper", {
+  loop: true,
+  speed: 600,
+  spaceBetween: 0,
+  effect: "coverflow",
+  centeredSlides: true,
+  slidesPerView: 2,
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: { 
+      slidesPerView: 1,
     },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-  });
+    768: {
+      slidesPerView: 2,
+    }
+  }
+});
+
 
 
