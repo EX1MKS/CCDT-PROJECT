@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../asset/css/output.css" />
+
+  <title>ABOUT</title>
+  <!-- Import Google Font CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <!-- End of Google Font CDN -->
+  <!-- library cdn link typejs -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <!-- data aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body class="bg-white text-gray-900 dark:bg-dark dark:text-white overflow-x-hidden">
+  <!-- navbar section begin -->
+  <nav class="z-50 top-0 fixed w-full bg-transparent transition-colors duration-300">
+    <div class="flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="#" data-aos="fade-right" data-aos-duration="800" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <span class="self-center text-2xl font-bold whitespace-nowrap text-black dark:text-white">HAZEN</span>
+      </a>
+
+      <div class="md:absolute md:right-2 md:top-4">
+        <!-- dark mode button -->
+        <button type="button" id="dark-toggle" class="md:text-3xl text-2xl cursor-pointer rotate-y-180">
+          <ion-icon class="text-black dark:text-white" name="moon"></ion-icon>
+        </button>
+        <button data-collapse-toggle="navbar-default" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden hover:bg-black focus:outline-none focus:ring-[1px] focus:ring-black dark:text-white dark:hover:bg-white dark:focus:ring-white"
+          aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="hidden w-full md:block md:mr-8 md:w-auto" id="navbar-default">
+        <ul
+          class="font-medium flex flex-col p-4 md:p-0 mt-4 border md:bg-transparent md:dark:bg-transparent dark:bg-black/20 bg-white/10 border-black rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:border-white">
+          <li data-aos="fade-left" data-aos-duration="1000" class="relative group">
+            <a href="index.html"
+              class="block py-2 px-3 md:p-0 text-black dark:text-white transition-colors duration-300 hover:text-primary dark:hover:text-primary">Home</a>
+            <span
+              class="absolute bottom-0 left-0 h-[2px] w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
+          </li>
+
+          <li data-aos="fade-left" data-aos-duration="800" class="relative group">
+            <a href="about.html"
+              class="block py-2 px-3 md:p-0 text-black dark:text-white transition-colors duration-300 hover:text-primary dark:hover:text-primary">About
+              Us</a>
+            <span
+              class="absolute bottom-0 left-0 h-[2px] w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
+          </li>
+
+          <li data-aos="fade-left" data-aos-duration="600" class="relative group">
+            <a href="games.html"
+              class="block py-2 px-3 md:p-0 text-black dark:text-white transition-colors duration-300 hover:text-primary dark:hover:text-primary">Games</a>
+            <span
+              class="absolute bottom-0 left-0 h-[2px] w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
+          </li>
+
+          <li data-aos="fade-left" data-aos-duration="600" class="relative group">
+            <a href="careers.html"
+              class="block py-2 px-3 md:p-0 text-black dark:text-white transition-colors duration-300 hover:text-primary dark:hover:text-primary">Careers</a>
+            <span
+              class="absolute bottom-0 left-0 h-[2px] w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
+          </li>
+
+          <li data-aos="fade-left" data-aos-duration="400" class="relative group">
+            <a href="index.html#mission"
+              class="block py-2 px-3 md:p-0 text-black dark:text-white transition-colors duration-300 hover:text-primary dark:hover:text-primary">Our
+              Mission</a>
+            <span
+              class="absolute bottom-0 left-0 h-[2px] w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <!-- navbar section end -->
+
+  <!-- careers hero section begin -->
+  <div id="careers-hero"
+    class="w-full h-screen flex flex-row-reverse justify-around items-center bg-bglight dark:bg-bgdark">
+    <div class="h-screen w-full">
+      <div class="">
+        <div class="relative w-full h-screen">
+          <video autoplay muted loop playsinline disablepictureinpicture controlsList
+            class="w-full h-full object-cover">
+            <source src="/src/asset/vid/careers/careers-hero3.mp4" type="video/mp4" />
+            Aeterna Chronicles Hexen City Video
+          </video>
+          <div
+            class="absolute top-1/2 translate-y-[-50%] left-1/2 translate-x-[-50%] text-black shadow-dark dark:text-white">
+            <div class="flex flex-col items-center">
+              <div data-aos="zoom-in-up" data-aos-duration="1000"
+                class="h-[36rem] m-auto flex flex-col justify-center items-center">
+                <h1
+                  class="text-8xl text-black dark:text-white font-extrabold uppercase text-shadow-lg/60 text-shadow-black dark:text-shadow-white">
+                  Open Positions
+                </h1>
+                <p
+                  class="text-3xl text-center mt-3 text-shadow-lg/100 text-shadow-black dark:text-shadow-white dark:text-shadow-lg/40">
+                  We are always looking for creative, driven and professional individuals. Doesn’t matter if you’re just
+                  kicking off your career, or already possess significant experience in your field — we’ve got positions
+                  that will enable you to grow.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- careers hero section end -->
+
+  <!-- open possitions section begin -->
+  <div id="possitions"
+    class="mx-auto py-20 px-80 bg-no-repeat bg-cover bg-center dark:bg-[url('/src/asset/img/careers/position-bg1.jpg')] bg-[url('/src/asset/img/careers/position-bg1-light.png')]">
+    <h1
+      class="text-5xl text-center text-black dark:text-white font-extrabold uppercase text-shadow-lg/60 text-shadow-black dark:text-shadow-white mb-15">
+      Turn Your Passion into Legendary Games</h1>
+    <div class="justify-center items-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+
+
+      <!-- Card 1 -->
+      <a href="#"
+        class="text-black dark:text-white hover:text-white dark:hover:text-black dark:bg-white/10 bg-black/10 p-5 rounded-[20px] h-[40vh] hover:scale-105 dark:hover:bg-white/70 hover:bg-black/70 transition-all duration-300">
+        <div class="flex items-center justify-center mb-4">
+          <span class="text-8xl"><ion-icon name="search"></ion-icon></span>
+        </div>
+        <h2 class="text-xl text-center font-semibold mb-7">ANALYTICS & RESEARCH</h2>
+        <p class="font-medium text-justify">Hazen researchers seek to understand the behavior and needs of our players
+          as they use our apps, websites and games.</p>
+      </a>
+
+      <!-- Card 2 -->
+      <a href="#"
+        class="text-black dark:text-white hover:text-white dark:hover:text-black dark:bg-white/10 bg-black/10 p-5 rounded-[20px] h-[40vh] hover:scale-105 dark:hover:bg-white/70 hover:bg-black/70 transition-all duration-300">
+        <div class="flex items-center justify-center mb-4">
+          <span class="text-8xl"><ion-icon name="color-palette"></ion-icon></span>
+        </div>
+        <h2 class="text-xl text-center font-semibold mb-7">ART, ANIMATION & SOUND</h2>
+        <p class="font-medium text-justify">Artists work with a variety of tools to make fantasies real and craft
+          inviting worlds that fuel the creativity of your peers.</p>
+      </a>
+
+      <!-- Card 3 -->
+      <a href="#"
+        class="text-black dark:text-white hover:text-white dark:hover:text-black dark:bg-white/10 bg-black/10 p-5 rounded-[20px] h-[40vh] hover:scale-105 dark:hover:bg-white/70 hover:bg-black/70 transition-all duration-300">
+        <div class="flex items-center justify-center mb-4">
+          <span class="text-8xl"><ion-icon name="business"></ion-icon></span>
+        </div>
+        <h2 class="text-xl text-center font-semibold mb-7">CORPORATE OPERATIONS</h2>
+        <p class="font-medium text-justify">Operations handles consumer products, human resources, legal, finance, and
+          even more work related to our games in-house to make sure everything we do is polished until it shines.</p>
+      </a>
+
+      <!-- Card 4 -->
+      <a href="#"
+        class="text-black dark:text-white hover:text-white dark:hover:text-black dark:bg-white/10 bg-black/10 p-5 rounded-[20px] h-[40vh] hover:scale-105 dark:hover:bg-white/70 hover:bg-black/70 transition-all duration-300">
+        <div class="flex items-center justify-center mb-4">
+          <span class="text-8xl"><ion-icon name="create"></ion-icon></ion-icon></span>
+        </div>
+        <h2 class="text-xl text-center font-semibold mb-7">GAME DESIGN</h2>
+        <p class="font-medium text-justify">Designers make sure that our games delight the mind with exciting
+          interactions between players and AI.</p>
+      </a>
+
+      <!-- Card 5 -->
+      <a href="#"
+        class="text-black dark:text-white hover:text-white dark:hover:text-black dark:bg-white/10 bg-black/10 p-5 rounded-[20px] h-[40vh] hover:scale-105 dark:hover:bg-white/70 hover:bg-black/70 transition-all duration-300">
+        <div class="flex items-center justify-center mb-4">
+          <span class="text-8xl"><ion-icon name="construct"></ion-icon></span>
+        </div>
+        <h2 class="text-xl text-center font-semibold mb-7">ENGINEERING & TECHNOLOGY</h2>
+        <p class="font-medium text-justify">Hazen software engineers build and support the advanced infrastructure that
+          allows us to craft the worlds of our games and their millions of fans play together.</p>
+      </a>
+
+      <!-- Card 6 -->
+      <a href="#"
+        class="text-black dark:text-white hover:text-white dark:hover:text-black dark:bg-white/10 bg-black/10 p-5 rounded-[20px] h-[40vh] hover:scale-105 dark:hover:bg-white/70 hover:bg-black/70 transition-all duration-300">
+        <div class="flex items-center justify-center mb-4">
+          <span class="text-8xl"><ion-icon name="document-text"></ion-icon></span>
+        </div>
+        <h2 class="text-xl text-center font-semibold mb-7">PRODUCTION, PROGRAM & PROJECT MANAGEMENT</h2>
+        <p class="font-medium text-justify">Producers help with the diverse skills of our content creators and supervise
+          sophisticated efforts that span multiple regions across the globe.</p>
+      </a>
+
+      <!-- Card 7 -->
+      <a href="#"
+        class="text-black dark:text-white hover:text-white dark:hover:text-black dark:bg-white/10 bg-black/10 p-5 rounded-[20px] h-[40vh] hover:scale-105 dark:hover:bg-white/70 hover:bg-black/70 transition-all duration-300">
+        <div class="flex items-center justify-center mb-4">
+          <span class="text-8xl"><ion-icon name="chatbubbles"></ion-icon></span>
+        </div>
+        <h2 class="text-xl text-center font-semibold mb-7">QA, LOCALIZATION, & CS</h2>
+        <p class="font-medium text-justify">Focused on the players, this is the birthplace of Hazen “Polish.” Whether
+          it’s our Quality Assurance, Localization, or Customer Service teams, we strive to deliver unforgettable gaming
+          experiences for millions around the world.</p>
+      </a>
+
+      <!-- Card 8 -->
+      <a href="#"
+        class="text-black dark:text-white hover:text-white dark:hover:text-black dark:bg-white/10 bg-black/10 p-5 rounded-[20px] h-[40vh] hover:scale-105 dark:hover:bg-white/70 hover:bg-black/70 transition-all duration-300">
+        <div class="flex items-center justify-center mb-4">
+          <span class="text-8xl"><ion-icon name="color-fill"></ion-icon></span>
+        </div>
+        <h2 class="text-xl text-center font-semibold mb-7">UX & VISUAL DESIGN</h2>
+        <p class="font-medium text-justify">Work closely with game designers, artists, and engineers to conceptualize,
+          design, and iterate across all gameplay features and systems ensuring everything feels cohesive and easy to
+          use from day one.</p>
+      </a>
+
+      <!-- Card 9 -->
+      <a href="#"
+        class="text-black dark:text-white hover:text-white dark:hover:text-black dark:bg-white/10 bg-black/10 p-5 rounded-[20px] h-[40vh] hover:scale-105 dark:hover:bg-white/70 hover:bg-black/70 transition-all duration-300">
+        <div class="flex items-center justify-center mb-4">
+          <span class="text-8xl"><ion-icon name="megaphone"></ion-icon></span>
+        </div>
+        <h2 class="text-xl text-center font-semibold mb-7">COMMUNITY, MARKETING & COMMUNICATIONS</h2>
+        <p class="font-medium text-justify">​​​​​​​From coordinating events to keeping our global fan base informed and
+          up to date, these pros spread the word about Blizzard games.</p>
+      </a>
+
+    </div>
+
+    <!-- no open position section begin -->
+    <div class="rounded-[20px] relative w-full h-[40vh] mt-20 overflow-hidden">
+      <div
+        class="absolute inset-0 bg-no-repeat bg-cover bg-right md:bg-center brightness-75 bg-[url('/src/asset/img/careers/no-possition-bg1.jpg')]">
+      </div>
+      <div class="relative flex items-center justify-center h-full">
+        <div class="text-center text-white">
+          <h1 class="text-4xl font-bold mb-4">NO OPENINGS FOR YOUR FIELD?</h1>
+          <a href="#"
+            class="inline-block rounded-[20px] px-6 py-3 bg-primary text-white font-semibold hover:bg-white hover:text-primary transition duration-300">
+            SEND US YOUR CV
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- no open position section end -->
+
+
+  </div>
+  <!-- open possitions section end -->
+
+  <!-- Recruitment Process -->
+  <div id="recruitment-process" class="w-full h-screen px-20 mb-50 ">
+    <h1 class="text-5xl text-center font-extrabold uppercase mt-20">
+      Recruitment Process
+    </h1>
+
+    <!-- slider -->
+    <div class="swiper mySwiper h-[85%] mt-10 md:mt-10 hover:cursor-grab">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide group h-full p-5">
+          <div
+            class="absolute z-1 inset-0 h-full rounded-[20px] bg-no-repeat bg-cover bg-right md:bg-center brightness-75 bg-[url('/src/asset/img/games/helldiver.png')]">
+          </div>
+          <div class="flex flex-col text-black dark:text-white items-start text-left">
+            <h1 class="font-semibold text-5xl mb-8 z-2 group-hover:text-primary transition duration-300">01</h1>
+            <div class="flex z-2 justify-center items-center w-full py-10 mb-3 md:mb-0 text-9xl">
+              <ion-icon name="mail"></ion-icon>
+            </div>
+
+            <div class="flex z-2 flex-col justify-start max-w-xl">
+              <h2 class="text-3xl font-extrabold uppercase">
+                Application
+              </h2>
+              <p class="mt-4 text-xl text-justify">
+                If you find an appealing job opportunity on
+                our careers site, don't hesitate to submit
+                your application. We actively engage with
+                potentially suiting candidates and the
+                positions are filled as soon as we find the
+                right person for the job. <br> <br>
+                Applying should be quick and
+                straightforward: upload your resume and
+                - if required - remember to attach your
+                portfolio or reel.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide group p-5">
+          <div
+            class="absolute z-1 inset-0 rounded-[20px] bg-no-repeat bg-cover bg-right md:bg-center brightness-75 bg-[url('/src/asset/img/games/helldiver.png')]">
+          </div>
+          <div class="flex flex-col text-black dark:text-white items-start text-left">
+            <h1 class="font-semibold text-5xl mb-8 z-2 group-hover:text-primary transition duration-300">02</h1>
+            <div class="flex z-2 justify-center items-center w-full py-10 mb-3 md:mb-0 text-9xl">
+              <ion-icon name="people"></ion-icon>
+            </div>
+
+            <div class="flex z-2 flex-col justify-start max-w-xl">
+              <h2 class="text-3xl font-extrabold uppercase">
+                FIRST INTERVIEW
+              </h2>
+              <p class="mt-4 text-xl text-justify">
+                If you find an appealing job opportunity on
+                our careers site, don't hesitate to submit
+                your application. We actively engage with
+                potentially suiting candidates and the
+                positions are filled as soon as we find the
+                right person for the job.If you're located outside the Greater
+                Helsinki or Stockholm area, no problem!
+                We will begin the discussion with you via
+                Zoom. <br> <br>
+                First interview's objective is to learn more
+                about you, introduce ourselves, and tell
+                you more about the job and the studio. If
+                we both agree to move forward, you will
+                receive additional information about our
+                benefits, details about living, working and
+                the relocation process.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide group p-5">
+          <div
+            class="absolute z-1 inset-0 rounded-[20px] bg-no-repeat bg-cover bg-right md:bg-center brightness-75 bg-[url('/src/asset/img/games/helldiver.png')]">
+          </div>
+          <div class="flex flex-col text-black dark:text-white items-start text-left">
+            <h1 class="font-semibold text-5xl mb-8 z-2 group-hover:text-primary transition duration-300">03</h1>
+            <div class="flex z-2 justify-center items-center w-full py-10 mb-3 md:mb-0 text-9xl">
+              <ion-icon name="mail"></ion-icon>
+            </div>
+
+
+            <div class="flex z-2 flex-col justify-start max-w-xl">
+              <h2 class="text-3xl font-extrabold uppercase">
+                COMPETENCE-BASED ASSESSMENT
+              </h2>
+              <p class="mt-4 text-xl text-justify">
+                The next step is to evaluate your
+                competencies and experience. For most
+                of our roles, we have a practical
+                assessment that will be reviewed by
+                members of our teams. If the feedback is
+                positive, we proceed to a competence-
+                focused interview with people from the
+                relevant craft.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide group p-5">
+          <div
+            class="absolute z-1 inset-0 rounded-[20px] bg-no-repeat bg-cover bg-right md:bg-center brightness-75 bg-[url('/src/asset/img/games/helldiver.png')]">
+          </div>
+          <div class="flex flex-col text-black dark:text-white items-start text-left">
+            <h1 class="font-semibold text-5xl mb-8 z-2 group-hover:text-primary transition duration-300">04</h1>
+            <div class="flex z-2 justify-center items-center w-full py-10 mb-3 md:mb-0 text-9xl">
+              <ion-icon name="mail"></ion-icon>
+            </div>
+
+
+            <div class="flex z-2 flex-col justify-start max-w-xl">
+              <h2 class="text-3xl font-extrabold uppercase">
+                FINAL INTERVIEWS
+              </h2>
+              <p class="mt-4 text-xl text-justify">
+                The last step of the recruitment process
+                is meant for you to meet the team, learn
+                more about our projects, and get a better
+                understanding of our studio culture, which
+                often takes a full day. <br> <br>
+                If you are already located close to one of
+                our offices or if the circumstances allow,
+                we would like to organize this step as an
+                in-person visit to our studio. Otherwise,
+                we will arrange a remote alternative.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="swiper-slide group p-5">
+          <div
+            class="absolute z-1 inset-0 rounded-[20px] bg-no-repeat bg-cover bg-right md:bg-center brightness-75 bg-[url('/src/asset/img/games/helldiver.png')]">
+          </div>
+          <div class="flex flex-col text-black dark:text-white items-start text-left">
+            <h1 class="font-semibold text-5xl mb-8 z-2 group-hover:text-primary transition duration-300">05</h1>
+            <div class="flex z-2 justify-center items-center w-full py-10 mb-3 md:mb-0 text-9xl">
+              <ion-icon name="mail"></ion-icon>
+            </div>
+
+            <div class="flex z-2 flex-col justify-start max-w-xl">
+              <h2 class="text-3xl font-extrabold uppercase">
+                OFFER
+              </h2>
+              <p class="mt-4 text-xl text-justify">
+                If the feeling of a match is still mutual, we
+                will make you a job offer. When the offer
+                has been signed, we can start planning
+                your on-boarding together. <br> <br>
+                Step into our world and discover the
+                exciting opportunities that await you.
+                Welcome to Hazen!
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- Navigasi Tombol -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+  <!-- Recruitment Process -->
+
+
+  <!-- footer begin -->
+  <footer class="bg-white dark:bg-dark">
+    <div class="mx-auto w-full p-4 py-6 lg:py-8">
+      <div class="md:flex md:justify-between">
+        <div>
+          <div>
+            <a href="#" class="flex items-center">
+              <span class="self-center text-2xl font-bold whitespace-nowrap mb-5 dark:text-white">HAZEN</span>
+            </a>
+          </div>
+
+          <div class="flex mb-7 md:mb-0 sm:justify-center sm:mt-0">
+            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+              <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 8 19">
+                <path fill-rule="evenodd"
+                  d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="sr-only">Facebook page</span>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+              <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 21 16">
+                <path
+                  d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+              </svg>
+              <span class="sr-only">Discord community</span>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+              <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 20 17">
+                <path fill-rule="evenodd"
+                  d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="sr-only">Twitter page</span>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+              <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="sr-only">GitHub account</span>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+              <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="sr-only">Dribbble account</span>
+            </a>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              pages
+            </h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                <a href="index.html" class="hover:text-primary dark:hover:text-primary">Home</a>
+              </li>
+              <li class="mb-4">
+                <a href="about.html" class="hover:text-primary dark:hover:text-primary">About Us</a>
+              </li>
+              <li class="mb-4">
+                <a href="games.html" class="hover:text-primary dark:hover:text-primary">Games</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              Games
+            </h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                <a href="#" class="hover:text-primary dark:hover:text-primary">Blade & Souls</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:text-primary dark:hover:text-primary">Aeterna Chronicles</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:text-primary dark:hover:text-primary">Human Vanguard</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:text-primary dark:hover:text-primary">Exo Clash</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:text-primary dark:hover:text-primary">Iron Legion</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:text-primary dark:hover:text-primary">Void Templar</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              Contact Us
+            </h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                <a href="#" class="hover:text-primary dark:hover:text-primary">Email</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-primary dark:hover:text-primary">Support Center</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="#"
+            class="hover:underline">HAZEN™</a>. All Rights
+          Reserved.
+        </span>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+  <!-- SCRIPT PANGGIL SEMUA KEBUTUHAN -->
+
+  <!-- panggil ion icons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- panggil js Flowbite -->
+  <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
+  <!-- panggil js Custom sendiri -->
+  <script src="../asset/js/careers.js"></script>
+  <!-- panggil data aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- panggil swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>
