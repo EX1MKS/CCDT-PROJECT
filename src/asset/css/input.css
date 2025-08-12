@@ -21,13 +21,14 @@ body {
 
 /* scroll bar begin */
 body::-webkit-scrollbar {
-  width: 1.5px;
+  width: 3px;
 }
 body::-webkit-scrollbar-track {
   background: #e8e8e8;
 }
 body::-webkit-scrollbar-thumb {
   background-color: var(--color-dark);
+  border-radius: 20px;
 }
 .dark body::-webkit-scrollbar-track {
   background: #252525;

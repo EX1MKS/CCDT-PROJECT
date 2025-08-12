@@ -22,18 +22,30 @@ window.addEventListener('scroll', () => {
     }
 });
 
-//Recruitment Process
-  var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3.2,
-      speed: 600,
-      spaceBetween: 30,
-      loop: false,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
+// Recruitment Process
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3.2,
+  speed: 600,
+  spaceBetween: 30,
+  loop: false,
+  keyboard: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    // <= 768px (tablet/HP)
+    0: {
+      slidesPerView: 1
+    },
+    // >= 769px (desktop)
+    769: {
+      slidesPerView: 3.2
+    }
+  }
+});
+
