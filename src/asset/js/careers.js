@@ -22,6 +22,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
+
 // Recruitment Process
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3.2,

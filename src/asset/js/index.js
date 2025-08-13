@@ -61,7 +61,7 @@ const gamesSwiper = new Swiper("#games .mySwiper", {
     0: { 
       slidesPerView: 1,
     },
-    768: {
+    1024: {
       slidesPerView: 2,
     }
   }

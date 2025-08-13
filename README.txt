@@ -16,6 +16,6 @@ SEMIFINAL UPDATE
 we add careers page and add responsive to this project
 
 if something error happend, here our whatsapp contact below
-Eki 081295228281
+Eki Mukhlis 081295228281
 or
-Tito 081517227748
+Tito Putra Bamulo 081517227748
