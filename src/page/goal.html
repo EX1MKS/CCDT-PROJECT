@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../asset/css/output.css" />
 
-    <title>ABOUT</title>
+    <title>GOAL</title>
     <!-- Import Google Font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -168,182 +168,121 @@
     </nav>
     <!-- navbar section end -->
 
-    <!-- about section begin-->
-    <section
-      id="about-us"
-      class="w-full h-screen flex flex-row-reverse justify-start items-center bg-bglight bg-no-repeat bg-cover bg-right bg-[url('/src/asset/img/about/abb.png')] dark:bg-bgdark lg:bg-bottom"
+    <!-- goal section start -->
+    <div
+      id="goal"
+      class="w-full h-screen flex flex-row-reverse justify-around items-center bg-bglight dark:bg-bgdark"
+    >
+      <div class="swiper mySwiper h-screen w-full">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide relative w-full h-screen">
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              disablepictureinpicture
+              controlsList
+              class="w-full h-full object-cover"
+            >
+              <source src="/src/asset/vid/goal/goal.mp4" type="video/mp4" />
+              Aeterna Chronicles Zyanghua City Video
+            </video>
+            <div
+              class="absolute top-1/2 translate-y-[-50%] left-1/2 translate-x-[-50%] text-black shadow-dark dark:text-white"
+            >
+              <div class="flex flex-col items-center">
+                <div
+                  data-aos="zoom-in-up"
+                  data-aos-duration="1000"
+                  class="h-[36rem] m-auto flex flex-col justify-center items-center"
+                >
+                  <h1
+                    class="text-6xl lg:text-7xl text-black dark:text-white font-extrabold uppercase text-shadow-lg/60 text-shadow-black dark:text-shadow-white"
+                  >
+                    Our goal
+                  </h1>
+                  <p
+                    class="text-2xl lg:text-3xl lg:text-center mt-3 text-shadow-lg/100 text-shadow-black dark:text-shadow-white dark:text-shadow-lg/40"
+                  >
+                    To create impressive and inovative video games that deliver
+                    unforgettable experiences to players worldwide.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- goal section end -->
+
+    <!-- vision section start -->
+    <div
+      class="w-full h-screen flex flex-col justify-evenly items-center md:flex-row"
     >
       <div
-        class="flex flex-col justify-center w-full mx-12 text-shadow-lg/20 text-shadow-white text-md lg:w-1/3 lg:mr-30 xl:text-3xl dark:text-shadow-dark"
+        class="w-[15rem] md:w-[20rem]"
+        data-aos="zoom-in-up"
+        data-aos-duration="1000"
       >
-        <div class="flex flex-col items-center">
-          <h1
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            class="mb-5 text-5xl text-left font-extrabold uppercase"
-          >
-            ABOUT HAZEN
-          </h1>
-          <p
-            data-aos="fade-left"
-            data-aos-duration="800"
-            class="text-center text-medium xl:text-xl font-semibold"
-          >
-            Established in 2017, HAZEN Games is a global video game company
-            dedicated to gaming development, publication, and esports. With more
-            than 1,600 employees worldwide, the company operates offices in
-            Indonesia, Malaysia, Singapore, the Philippines, Latin America,
-            South Korea, and China. We have successfully launched several
-            high-profile games globally and has built long-term relationships
-            with governments and esports organizations in more than 30 countries
-            worldwide.Human Vanguard is wining Game of the Year 2022, available
-            on the PC, Xbox & PlayStation.
+        <img src="../asset/img/goal/vision.gif" alt="" class="rounded-3xl" />
+      </div>
+
+      <div
+        class="w-full text-center text-shadow-white text-shadow-sm md:w-1/3"
+        data-aos="fade-up-left"
+        data-aos-duration="1000"
+      >
+        <h2 class="font-extrabold text-3xl">VISION</h2>
+        <p class="mt-5">
+          To become the leading global game studio known for pushing creative
+          boundaries, inspiring gamers of all ages, and shaping the future of
+          interactive entertainment.
+        </p>
+      </div>
+    </div>
+    <!-- vision section end -->
+
+    <!-- mision section start -->
+    <div
+      class="w-full h-screen flex flex-col justify-evenly items-center md:flex-row-reverse"
+    >
+      <div
+        class="w-[20rem] md:w-[30rem]"
+        data-aos="zoom-in-up"
+        data-aos-duration="1000"
+      >
+        <img src="../asset/img/goal/mission.gif" alt="" class="rounded-3xl" />
+      </div>
+
+      <div
+        class="w-[95%] text-center text-shadow-white text-shadow-sm md:w-1/3"
+        data-aos="fade-up-right"
+        data-aos-duration="1000"
+      >
+        <h2 class="font-extrabold text-3xl mb-5 text-center">MISSION</h2>
+        <div class="grid grid-cols-2 gap-1 text-sm md:grid-cols-1">
+          <p class="mt-3">
+            1. Develop high-quality, story-driven games that captivate players
+            emotionally and intellectually.
+          </p>
+          <p class="mt-3">
+            2. Foster a creative and inclusive work environment where innovation
+            thrives.
+          </p>
+          <p class="mt-3">
+            3. Leverage the latest technology to create unique and interactive
+            gameplay experiences.
+          </p>
+          <p class="mt-3">
+            4. Engage with our gaming community to continuously improve and
+            evolve our games.
           </p>
         </div>
       </div>
-    </section>
-    <!-- about section end-->
-
-    <!-- swipper timeline -->
-    <div id="timeline" class="w-full h-screen items-center">
-      <h1 class="text-5xl text-center font-extrabold uppercase mt-20">
-        Our Journey
-      </h1>
-
-      <!-- slider -->
-      <div class="swiper mySwiper mt-10 md:mt-20 h-[60vh]">
-        <div class="swiper-wrapper">
-          <!-- Slide 1 -->
-          <div class="swiper-slide h-screen w-full relative">
-            <div
-              id="show"
-              class="gotimeline flex flex-col md:flex-row items-center justify-evenly"
-            >
-              <div class="md:w-[30rem] w-80 mb-3 md:mb-0">
-                <img
-                  src="../asset/img/about/first-game.jpeg"
-                  alt="game_logo"
-                  class="border rounded-xl"
-                />
-              </div>
-              <div class="w-1/3 flex flex-col items-center">
-                <h2
-                  class="text-4xl md:text-left text-center whitespace-nowrap font-extrabold uppercase"
-                >
-                  First Game
-                </h2>
-                <p class="md:text-center w-[35vh] md:w-full mt-4 text-justify">
-                  In November 2016, <strong>Void Templar</strong> was launched
-                  worldwide and was listed on PC, Xbox, and PlayStation. In
-                  2017, it won the Best Visual Art Award. Even though it was
-                  made by a team of less than 70 people, the game became a big
-                  success. This was a great start for Hazen Company to grow and
-                  create more games.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Slide 2 -->
-          <div class="swiper-slide h-screen w-full relative">
-            <div
-              id="Tournament"
-              class="gotimeline flex flex-col md:flex-row items-center justify-evenly"
-            >
-              <div class="md:w-[30rem] w-80 mb-3 md:mb-0">
-                <img
-                  src="../asset/img/about/turnamen3.jpg"
-                  alt="game_logo"
-                  class="border rounded-xl"
-                />
-              </div>
-              <div class="w-1/3 flex flex-col items-center">
-                <h2
-                  class="text-4xl md:text-left text-center whitespace-nowrap font-extrabold uppercase"
-                >
-                  Tournament
-                </h2>
-                <p class="md:text-center w-[35vh] md:w-full mt-4 text-justify">
-                  In May 2020, HAZEN held first World wide Exo Clash
-                  &nbsp;<strong>offline esports tournament</strong>
-                  in South Korea. The enthusiasm of the gamers was very good,
-                  the total number of offline viewers was one million viewers
-                  and the online viewers on YouTube reached five million
-                  viewers, this made the demand for the next tournaments even
-                  greater.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Slide 3 -->
-          <div class="swiper-slide h-screen w-full relative">
-            <div
-              id="Games"
-              class="gotimeline flex flex-col md:flex-row items-center justify-evenly"
-            >
-              <div class="md:w-[30rem] w-80 mb-3 md:mb-0">
-                <img
-                  src="../asset/img/games/wp2753232-marine-hd-wallpaper.jpg"
-                  alt="game_logo"
-                  class="border rounded-xl"
-                />
-              </div>
-              <div class="w-1/3 flex flex-col items-center">
-                <h2
-                  class="text-4xl md:text-left text-center whitespace-nowrap font-extrabold uppercase"
-                >
-                  Games
-                </h2>
-                <p class="md:text-center w-[35vh] md:w-full mt-4 text-justify">
-                  In 2024, Hazen had created a total of six games across various
-                  genres and platforms, including PC, Xbox, PlayStation, and
-                  cross-platform. Globally, they had been downloaded over 1.5
-                  billion times and had a monthly active user base of over 110
-                  million players.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Slide 4 -->
-          <div class="swiper-slide h-screen w-full relative">
-            <div
-              id="Achievement"
-              class="gotimeline flex flex-col md:flex-row items-center justify-evenly"
-            >
-              <div class="md:w-[30rem] w-80 mb-3 md:mb-0">
-                <img
-                  src="../asset/img/about/ach.jpg"
-                  alt="game_logo"
-                  class="border rounded-xl"
-                />
-              </div>
-              <div class="w-1/3 flex flex-col items-center">
-                <h2
-                  class="text-4xl md:text-left text-center whitespace-nowrap font-extrabold uppercase"
-                >
-                  Achievement
-                </h2>
-                <p class="md:text-center w-[35vh] md:w-full mt-4 text-justify">
-                  By 2025, Hazen had received several awards, including Aeterna
-                  Chronicles Game of the Year 2024, Blade & Souls Steam Best
-                  Action Game 2023, Human Vanguard Game of the Year 2022 (Fan
-                  Choice), Exo Clash Best Multiplayer Game 2021, Iron Legion
-                  Best Innovation & Visual Arts Game 2019, and Void Templar Best
-                  Visual Arts Award 2017.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Navigasi Tombol -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-
-        <!-- Bullet/Pagination -->
-        <div class="swiper-pagination mt-72 hidden md:inline"></div>
-      </div>
     </div>
-    <!-- swipper timeline-->
+    <!-- mision section end -->
 
     <!-- footer begin -->
     <footer class="bg-white dark:bg-dark">
