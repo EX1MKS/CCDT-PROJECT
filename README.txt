@@ -13,7 +13,7 @@ install node.js, and connect to internet.
 6. back to index.html and open with live server/five server
 
 SEMIFINAL UPDATE
-we add careers page and add responsive to this project
+we add careers page, goal page and add responsive to this project
 
 if something error happend, here our whatsapp contact below
 Eki Mukhlis 081295228281

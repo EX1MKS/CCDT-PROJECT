@@ -31,19 +31,21 @@
       </a>
 
       <div class="md:absolute md:right-2 md:top-4">
-       <!-- dark mode button -->
-            <button type="button" id="dark-toggle"
-              class="md:text-3xl text-2xl cursor-pointer rotate-y-180">
-              <ion-icon class="text-black dark:text-white" name="moon"></ion-icon>
-            </button>
-        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden hover:bg-black focus:outline-none focus:ring-[1px] focus:ring-black dark:text-white dark:hover:bg-white dark:focus:ring-white" aria-controls="navbar-default" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
-    </button> 
+        <!-- dark mode button -->
+        <button type="button" id="dark-toggle" class="md:text-3xl text-2xl cursor-pointer rotate-y-180">
+          <ion-icon class="text-black dark:text-white" name="moon"></ion-icon>
+        </button>
+        <button data-collapse-toggle="navbar-default" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden hover:bg-black focus:outline-none focus:ring-[1px] focus:ring-black dark:text-white dark:hover:bg-white dark:focus:ring-white"
+          aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
       </div>
-       
+
       <div class="hidden w-full md:block md:mr-8 md:w-auto" id="navbar-default">
         <ul
           class="font-medium flex flex-col p-4 md:p-0 mt-4 border md:bg-transparent md:dark:bg-transparent dark:bg-black/20 bg-white/10 border-black rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:border-white">
@@ -77,15 +79,14 @@
           </li>
 
           <li data-aos="fade-left" data-aos-duration="400" class="relative group">
-            <a href="index.html#mission"
+            <a href="goal.html"
               class="block py-2 px-3 md:p-0 text-black dark:text-white transition-colors duration-300 hover:text-primary dark:hover:text-primary">Our
-              Mission</a>
+              Goal</a>
             <span
               class="absolute bottom-0 left-0 h-[2px] w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
           </li>
         </ul>
       </div>
-
     </div>
   </nav>
   <!-- navbar section end -->
@@ -137,15 +138,16 @@
             Void Templar Charakter Video
           </video>
           <div
-            class="absolute w-1/2 top-1/2 translate-y-[-50%] right-0 text-shadow-2xl p-5 duration-750 rounded-2xl dark:left-0 dark:text-white hover:bg-white/20 dark:hover:bg-black/0">
+            class="absolute w-full lg:w-1/2 top-1/2 translate-y-[-50%] right-0 text-shadow-2xl py-8 px-2 duration-750 rounded-b-full dark:left-0 dark:bg-white/0 hover:bg-white/50 dark:hover:bg-black/50 dark:text-white">
             <div class="flex flex-col items-center" data-aos="fade-left" data-aos-duration="1000">
               <div class="w-full">
                 <div class="flex flex-col items-center">
                   <h1
-                    class="mb-5 text-5xl text-left text-black dark:text-white font-extrabold uppercase text-shadow-lg/60 text-shadow-black dark:text-shadow-white">
+                    class="mb-5 text-3xl lg:text-5xl text-left text-black dark:text-white font-extrabold uppercase text-shadow-lg/60 text-shadow-black dark:text-shadow-white">
                     ABOUT HAZEN
                   </h1>
-                  <p class="text-center text-2xl font-semibold w-[32rem] dark:text-shadow-lg/60 dark:text-shadow-white">
+                  <p
+                    class="text-center text-lg lg:text-2xl font-semibold w-[20rem] md:w-[32rem] dark:text-shadow-lg/60 dark:text-shadow-white">
                     Hazen Games is an international gaming company that has
                     created a wide variety of games and has a dedicated
                     department leading efforts in esports and game publishing.
@@ -156,7 +158,7 @@
                   <a href="../page/about.html"
                     class="group w-1/2 flex items-center justify-between mt-6 py-1 px-4 uppercase bg-primary rounded-sm transition-all duration-300 hover:bg-black hover:dark:bg-white">
                     <h3
-                      class="text-white dark:text-black text-lg font-semibold transition-colors duration-300 group-hover:text-primary">
+                      class="text-white dark:text-black text- md:text-lg font-semibold transition-colors duration-300 group-hover:text-primary">
                       SEE MORE
                     </h3>
                     <div class="w-[40%] flex items-center text-white dark:text-black text-4xl gap-0">
@@ -177,122 +179,135 @@
   <!-- about section end-->
 
   <!-- games section begin -->
-  <div id="games" class="games md:pt-2 bg-no-repeat h-screen bg-cover bg-center bg-[url('/src/asset/img/games/lightbg2.png')] dark:bg-[url('/src/asset/img/games/darkbg3.jpg')]">
+  <div id="games"
+    class="games md:pt-2 bg-no-repeat h-screen bg-cover bg-center bg-[url('/src/asset/img/games/lightbg2.png')] dark:bg-[url('/src/asset/img/games/darkbg3.jpg')]">
     <div data-aos="fade-up" data-aos-duration="1000">
-    <h1 class="md:mt-20 mt-5 mb-5 text-5xl text-center text-black dark:text-white font-extrabold uppercase">
-      OUR GAMES
-    </h1>
-    <!-- games slider begin -->
-    <div class="relative w-full h-auto">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <!-- Slide 1 -->
-          <div class="swiper-slide relative">
-            <img src="/src/asset/img/games/garen-mecha-kingdoms-uhdpaper.com-hd-5.1437.jpg"
-              class="object-cover w-full h-[70vh] md:h-full" alt="Exo Clash Game Image" />
-            <div class="absolute bottom-0 left-0 w-full text-black bg-white/40 dark:bg-black/60 dark:text-white md:p-4 pb-10 pl-4 pt-4">
-              <h3 class="text-xl font-bold">Exo Clash</h3>
-              <p class="text-medium md:text-sm">Sci-fi Mecha Action</p>
+      <h1 class="md:mt-20 mt-5 mb-5 text-5xl text-center text-black dark:text-white font-extrabold uppercase">
+        OUR GAMES
+      </h1>
+      <!-- games slider begin -->
+      <div class="relative w-full h-auto">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide relative">
+              <img src="/src/asset/img/games/garen-mecha-kingdoms-uhdpaper.com-hd-5.1437.jpg"
+                class="object-cover w-full h-[70vh] md:h-full" alt="Exo Clash Game Image" />
+              <div
+                class="absolute bottom-0 left-0 w-full text-black bg-white/40 dark:bg-black/60 dark:text-white md:p-4 pb-10 pl-4 pt-4">
+                <h3 class="text-xl font-bold">Exo Clash</h3>
+                <p class="text-medium md:text-sm">Sci-fi Mecha Action</p>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide relative">
+              <img src="/src/asset/img/games/helldiver.png" class="object-cover w-full h-[70vh] md:h-full"
+                alt="Human Vanguard Game Image" />
+              <div
+                class="absolute bottom-0 left-0 w-full text-black bg-white/40 dark:bg-black/60 dark:text-white md:p-4 pb-10 pl-4 pt-4">
+                <h3 class="text-xl font-bold">Human Vanguard</h3>
+                <span class="text-medium md:text-sm">Co-op Tactical Shooter</span>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide relative">
+              <img src="/src/asset/img/games/quality_restoration_20250718232659194.jpg"
+                class="object-cover w-full h-[70vh] md:h-full" alt="Aeterna Chronicles Game Image" />
+              <div
+                class="absolute bottom-0 left-0 w-full text-black bg-white/40 dark:bg-black/60 dark:text-white md:p-4 pb-10 pl-4 pt-4">
+                <h3 class="text-xl font-bold">Aeterna Chronicles</h3>
+                <span class="text-medium md:text-sm">Action Adventure</span>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <img src="/src/asset/img/games/wp2753232-marine-hd-wallpaper.jpg"
+                class="object-cover w-full h-[70vh] md:h-full" alt="Iron Legion Game Image" />
+              <div
+                class="absolute bottom-0 left-0 w-full text-black bg-white/40 dark:bg-black/60 dark:text-white md:p-4 pb-10 pl-4 pt-4">
+                <h3 class="text-xl font-bold">Iron Legion</h3>
+                <span class="text-medium md:text-sm">Sci-Fi Shooter Action Gore</span>
+              </div>
+            </div>
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+              <img src="/src/asset/img/games/yone-lol-splash-art-uhdpaper.com-hd-7.2287.jpg"
+                class="object-cover w-full h-[70vh] md:h-full" alt="Bladae & Souls Game Image" />
+              <div
+                class="absolute bottom-0 left-0 w-full text-black bg-white/40 dark:bg-black/60 dark:text-white md:p-4 pb-10 pl-4 pt-4">
+                <h3 class="text-xl font-bold">Blade & Souls</h3>
+                <span class="text-medium md:text-sm">Action Hack-n-Slash</span>
+              </div>
+            </div>
+            <!-- Slide 6 -->
+            <div class="swiper-slide">
+              <img src="/src/asset/img/games/wp1862523-arthas-wallpapers.jpg"
+                class="object-cover object-[70%_center] w-full h-[70vh] md:h-full" alt="Void Templar Game Image" />
+              <div
+                class="absolute bottom-0 left-0 w-full text-black bg-white/40 dark:bg-black/60 dark:text-white md:p-4 pb-10 pl-4 pt-4">
+                <h3 class="text-xl font-bold">Void Templar</h3>
+                <span class="text-medium md:text-sm">Dark Fantasy Action</span>
+              </div>
             </div>
           </div>
-          <!-- Slide 2 -->
-          <div class="swiper-slide relative">
-            <img src="/src/asset/img/games/helldiver.png" class="object-cover w-full h-[70vh] md:h-full"
-              alt="Human Vanguard Game Image" />
-            <div class="absolute bottom-0 left-0 w-full text-black bg-white/40 dark:bg-black/60 dark:text-white md:p-4 pb-10 pl-4 pt-4">
-              <h3 class="text-xl font-bold">Human Vanguard</h3>
-              <span class="text-medium md:text-sm">Co-op Tactical Shooter</span>
-            </div>
-          </div>
-          <!-- Slide 3 -->
-          <div class="swiper-slide relative">
-            <img src="/src/asset/img/games/quality_restoration_20250718232659194.jpg" class="object-cover w-full h-[70vh] md:h-full"
-              alt="Aeterna Chronicles Game Image" />
-            <div class="absolute bottom-0 left-0 w-full text-black bg-white/40 dark:bg-black/60 dark:text-white md:p-4 pb-10 pl-4 pt-4">
-              <h3 class="text-xl font-bold">Aeterna Chronicles</h3>
-              <span class="text-medium md:text-sm">Action Adventure</span>
-            </div>
-          </div>
-          <!-- Slide 4 -->
-          <div class="swiper-slide">
-            <img src="/src/asset/img/games/wp2753232-marine-hd-wallpaper.jpg" class="object-cover w-full h-[70vh] md:h-full"
-              alt="Iron Legion Game Image" />
-            <div class="absolute bottom-0 left-0 w-full text-black bg-white/40 dark:bg-black/60 dark:text-white md:p-4 pb-10 pl-4 pt-4">
-              <h3 class="text-xl font-bold">Iron Legion</h3>
-              <span class="text-medium md:text-sm">Sci-Fi Shooter Action Gore</span>
-            </div>
-          </div>
-          <!-- Slide 5 -->
-          <div class="swiper-slide">
-            <img src="/src/asset/img/games/yone-lol-splash-art-uhdpaper.com-hd-7.2287.jpg"
-              class="object-cover w-full h-[70vh] md:h-full" alt="Bladae & Souls Game Image" />
-            <div class="absolute bottom-0 left-0 w-full text-black bg-white/40 dark:bg-black/60 dark:text-white md:p-4 pb-10 pl-4 pt-4">
-              <h3 class="text-xl font-bold">Blade & Souls</h3>
-              <span class="text-medium md:text-sm">Action Hack-n-Slash</span>
-            </div>
-          </div>
-          <!-- Slide 6 -->
-          <div class="swiper-slide">
-            <img src="/src/asset/img/games/wp1862523-arthas-wallpapers.jpg" class="object-cover object-[70%_center] w-full h-[70vh] md:h-full"
-              alt="Void Templar Game Image" />
-            <div class="absolute bottom-0 left-0 w-full text-black bg-white/40 dark:bg-black/60 dark:text-white md:p-4 pb-10 pl-4 pt-4">
-              <h3 class="text-xl font-bold">Void Templar</h3>
-              <span class="text-medium md:text-sm">Dark Fantasy Action</span>
-            </div>
-          </div>
+
+          <!-- Navigasi Tombol -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+
+          <!-- Bullet/Pagination -->
+          <div class="swiper-pagination"></div>
         </div>
-
-        <!-- Navigasi Tombol -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-
-        <!-- Bullet/Pagination -->
-        <div class="swiper-pagination"></div>
+      </div>
+      <!-- games slider end -->
+      <div class="flex justify-center mt-2 xl:mt-[5%] 2xl:mt-[7%]">
+        <a href="../page/games.html"
+          class="group md:w-[18%] w-[40%] flex items-center justify-between mt-6 md:mt-0 py-1 px-4 uppercase bg-primary rounded-sm transition-all duration-300 hover:bg-black hover:dark:bg-white">
+          <h3
+            class="text-white dark:text-black md:text-lg text-medium whitespace-nowrap font-semibold transition-colors duration-300 group-hover:text-primary">
+            SEE MORE
+          </h3>
+          <div class="w-[40%] flex items-center text-white dark:text-black text-4xl gap-0">
+            <hr
+              class="w-full border border-white dark:border-black transition-all duration-300 group-hover:border-primary group-hover:w-[120%]" />
+            <ion-icon name="chevron-forward"
+              class="transition-transform duration-300 group-hover:translate-x-2 group-hover:text-primary"></ion-icon>
+          </div>
+        </a>
       </div>
     </div>
-    <!-- games slider end -->
-    <div class="flex justify-center mt-2 xl:mt-[5%] 2xl:mt-[7%]">
-      <a href="../page/games.html"
-        class="group md:w-[18%] w-[40%] flex items-center justify-between mt-6 py-1 px-4 uppercase bg-primary rounded-sm transition-all duration-300 hover:bg-black hover:dark:bg-white">
-        <h3
-          class="text-white dark:text-black md:text-lg text-medium whitespace-nowrap font-semibold transition-colors duration-300 group-hover:text-primary">
-          SEE MORE
-        </h3>
-        <div class="w-[40%] flex items-center text-white dark:text-black text-4xl gap-0">
-          <hr
-            class="w-full border border-white dark:border-black transition-all duration-300 group-hover:border-primary group-hover:w-[120%]" />
-          <ion-icon name="chevron-forward"
-            class="transition-transform duration-300 group-hover:translate-x-2 group-hover:text-primary"></ion-icon>
-        </div>
-      </a>
-    </div>
-      </div>
   </div>
   <!-- games section end -->
 
-  <!-- mission section start -->
-  <div id="mission" class="w-full h-screen flex flex-row-reverse justify-around items-center bg-bglight dark:bg-bgdark">
+  <!-- goal section start -->
+  <div id="goal" class="w-full h-screen flex flex-row-reverse justify-around items-center bg-bglight dark:bg-bgdark">
     <div class="swiper mySwiper h-screen w-full">
       <div class="swiper-wrapper">
         <div class="swiper-slide relative w-full h-screen">
           <video autoplay muted loop playsinline disablepictureinpicture controlsList
             class="w-full h-full object-cover">
-            <source src="/src/asset/vid/mission/mission.mp4" type="video/mp4" />
-             Aeterna Chronicles Zyanghua City Video
+            <source src="/src/asset/vid/goal/goal.mp4" type="video/mp4" />
+            Aeterna Chronicles Zyanghua City Video
           </video>
           <div
             class="absolute top-1/2 translate-y-[-50%] left-1/2 translate-x-[-50%] text-black shadow-dark dark:text-white">
             <div class="flex flex-col items-center">
               <div data-aos="zoom-in-up" data-aos-duration="1000"
-                class="h-[36rem] m-auto flex flex-col justify-center items-center">
+                class="h-[36rem] w-full flex flex-col justify-center items-center">
                 <h1
-                  class="text-7xl text-black dark:text-white font-extrabold uppercase text-shadow-lg/60 text-shadow-black dark:text-shadow-white">
-                  Our Mission
+                  class="text-6xl lg:text-7xl text-black dark:text-white font-extrabold uppercase text-shadow-lg/60 text-shadow-black dark:text-shadow-white">
+                  Our goal
                 </h1>
                 <p
-                  class="text-3xl text-center mt-3 text-shadow-lg/100 text-shadow-black dark:text-shadow-white dark:text-shadow-lg/40">
-                  To create thrilling experiences for players around the world
+                  class="text-2xl lg:text-3xl lg:text-center mt-3 text-shadow-lg/100 text-shadow-black dark:text-shadow-white dark:text-shadow-lg/40">
+                  To create impressive and inovative video games that deliver
+                  unforgettable experiences to players worldwide.
                 </p>
+                <div class="absolute bottom-10 right-8 md:right-20">
+                  <a href="goal.html" class="text-white font-semibold flex items-center gap-2 hover:text-primary transition">
+                    Learn more <span class="text-primary">&rarr;</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -300,7 +315,34 @@
       </div>
     </div>
   </div>
-  <!-- mision section end -->
+  <!-- goal section end -->
+
+  <!-- careers section begin -->
+   <section class="relative h-[60vh] bg-cover bg-center flex items-center justify-center"
+    style="background-image: url('/src/asset/img/careers/manila.jpg');">
+    <div class="absolute inset-0 bg-black/40"></div>
+
+    <div class="relative z-10 text-center px-4">
+      <h1 class="text-white text-4xl md:text-6xl font-bold uppercase tracking-wide">Join Us</h1>
+      <div class="mt-6 flex justify-center gap-4 flex-wrap">
+        <a href="careers.html" class="px-6 py-3  text-white bg-primary font-semibold rounded-full hover:bg-white hover:text-primary transition duration-300">Open Positions</a>
+        <a href="careers.html#recruitment-process" class="px-6 py-3  text-white bg-primary font-semibold rounded-full hover:bg-white hover:text-primary  transition duration-300">Recruitment Process</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="lg:py-12 py-7 px-6 md:px-20 bg-white dark:bg-black">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+      <span class="text-black dark:text-white">ROOM TO CREATE</span><br/>
+      <span class="text-primary">ROOM TO GROW</span>
+    </h2>
+    <p class="max-w-3xl text-lg text-black dark:text-white md:bg-center bg-[position:80%_center]">
+      Wherever you hail from, however old you are, games have defined you and now you want to define others through games. Good. At RED, we speak many languages but share one goal: creating games that stay with you and memories that make hearts beat faster.
+    </p>
+  </section>
+
+  <!-- careers section end -->
 
   <!-- footer begin -->
   <footer class="bg-white dark:bg-dark">
@@ -377,6 +419,9 @@
               </li>
               <li class="mb-4">
                 <a href="careers.html" class="hover:text-primary dark:hover:text-primary">Careers</a>
+              </li>
+              <li class="mb-4">
+                <a href="goal.html" class="hover:text-primary dark:hover:text-primary">Our Goal</a>
               </li>
             </ul>
           </div>
