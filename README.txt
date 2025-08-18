@@ -15,6 +15,9 @@ install node.js, and connect to internet.
 SEMIFINAL UPDATE
 we add careers page, goal page and add responsive to this project
 
+# GITHUB PAGE UPDATE
+
+
 if something error happend, here our whatsapp contact below
 Eki Mukhlis 081295228281
 or
