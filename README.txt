@@ -16,7 +16,7 @@ SEMIFINAL UPDATE
 we add careers page, goal page and add responsive to this project
 
 # GITHUB PAGE UPDATE
-
+https://ex1mks.github.io/CCDT-PROJECT/src/page/
 
 if something error happend, here our whatsapp contact below
 Eki Mukhlis 081295228281
