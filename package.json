@@ -1,7 +1,17 @@
 {
+  "name": "my-tailwind-app",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/asset/css/input.css -o ./src/asset/css/output.css --watch",
+    "build": "tailwindcss -i ./src/asset/css/input.css -o ./src/asset/css/output.css --minify",
+    "deploy": "gh-pages -d src/page"
+  },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.11",
     "flowbite": "^3.1.2",
     "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
