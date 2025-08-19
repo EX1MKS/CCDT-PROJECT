@@ -30,6 +30,7 @@ const typed = new Typed("#create", {
   loop: true, 
 });
 
+
 // animasi swiper games
 const gamesSwiper = new Swiper("#games .mySwiper", {
   loop: true,

@@ -16,10 +16,13 @@ var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   mousewheel: {
     releaseOnEdges: false,
-    forceToAxis: true, // ✅ Fokus hanya pada axis vertical
-    thresholdDelta: 30, // ✅ Hanya tanggapi scroll yang cukup kuat
+    forceToAxis: true,
+    thresholdDelta: 30,
   },
   keyboard: true,
+  touchReleaseOnEdges: true,
+  passiveListeners: false,
+
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -34,6 +37,10 @@ var swiper = new Swiper(".mySwiper", {
       setTimeout(function () {
         swiper.params.mousewheel.releaseOnEdges = true;
       }, 1700);
+    },
+    reachBeginning: function () {
+      swiper.params.mousewheel.releaseOnEdges = true;
     }
   }
 });
+
